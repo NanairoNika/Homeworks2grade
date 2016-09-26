@@ -1,0 +1,76 @@
+<html>
+	<head>
+		<title> Личная страница Щенникова Никиты</title>
+	 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+		<meta name="description" content="Личная страница и контакты">
+		<!-- Bootstrap Core CSS -->
+    	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	</head>
+	<body>
+		<nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom" style="background-color:orange;">
+			<div class="container"> 
+				<div class="navbar-header"> 
+					<a href="https://ling.hse.ru/" class="navbar-brand">Школа лингвистики НИУ ВШЭ</a> 
+				</div> 
+				<nav class="collapse navbar-collapse" id="bs-navbar"> 
+					<ul class="nav navbar-nav navbar-right"> 
+						<li> <a href="https://vk.com/hse_fipl16">Страница курса</a> </li> 
+						<li> <a href="https://vk.com/ficl_161">Страница группы 161</a> </li> 
+					</ul>
+				</nav> 
+			</div>
+		</nav>
+		<header style="background-color:grey; padding-top:50px; "> 
+			<div class="container"> 
+				<div class="row">
+					<div class="col-md-4">
+						<br/><br/>
+						<h1>Никита <br />
+						Щеников</h1>
+						<hr>
+						<p><i>Я не лингвист, я только учусь.</i></p> 
+	                </div>
+					<div class="col-md-4">
+        	            <img src="https://pp.vk.me/c620324/v620324063/9982/r0RLduLlXlQ.jpg" title="Фото Крепость Орешек"style="height:512px; width:341px; margin:20px 20px 40px 20px; " >
+					</div>
+	            </div>
+			</div>
+		</header>
+		<section id="portfolio" style="background-color:orange; padding-top:20px; ">
+			<div class="container">
+				<div class="col-md-3">
+				<article>
+					<h3>Место учебы</h2>
+					<p> <a href="https://ling.hse.ru/"> НИУ ВШЭ ФГН ФиКЛ </a> </p>
+				</article>
+				<article>
+					<h3>Школа</h2>
+					<p> <a href="http://www.179.ru/"> ГОУ СОШ №179 </a></p>
+				</article>
+				</div>
+				<div class="col-md-6">
+				<article>
+					<h3>Я не знаю что писать.<br />
+					Например, я люблю смотреть фильмы,
+					а еще я люблю играть в компьютерные игры.
+					Ну ещё математика нравится и языки.
+					P.S. Я не очень красноречивый.
+				</article>
+				</div>
+			<div class="col-md-3">
+				<h3>Мои ссылки</h3>
+						<ul>
+							<li><a href="https://vk.com/id10425766">VK</a></li>
+							<li><a href="https://twitter.com/NikaNikaNiiii">Twitter</a></li>
+						</ul>
+				</div>
+			</div>
+		</section>
+		<footer class="bs-docs-footer" style="background-color:grey; padding-top:10px;" > 
+			<div class="container"> 
+				<p style="text-align:left; ">&copy; Н. Щенников, 1 курс, 2016/2017</p> 
+			</div>
+		</footer>
+	</body>
+</html>
