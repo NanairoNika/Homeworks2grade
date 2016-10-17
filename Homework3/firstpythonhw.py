@@ -1,6 +1,6 @@
-a=int(input('Enter a'))
-b=int(input('Enter b'))
-c=int(input('Enter c'))
+a=int(input('Enter a: '))
+b=int(input('Enter b: '))
+c=int(input('Enter c: '))
 
 if a * b == c :
 	print('Произведение a и b равно с')
