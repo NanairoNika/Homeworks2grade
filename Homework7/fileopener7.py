@@ -1,14 +1,14 @@
 tekst=[]
-with open('text.txt','r', encoding = 'utf-8') as f:
-    for line in f:
-        tekst = f.readlines()
-m=len(tekst[0]-1)
-b=len(tekst[0]-1)
-for i in tekst:
-    if len(i)-1 > b:
-        b = len(i)-1
-    if len(i)-1 < m:
-        m = len(i)-1
+b=0
+m=0
+f = open('text.txt','r', encoding = 'utf-8')
+for line in f:
+    print (line)
+    print (len(line))
+    if len(line)-1 > b or b==0:
+        b = len(line)-1
+    if len(line)-1 < m or m==0:
+        m = len(line)-1
 print (b,m)
 a = b/m
 print (a)
