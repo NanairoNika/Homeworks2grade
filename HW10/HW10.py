@@ -1,5 +1,5 @@
 def textcleaner():
-    f = open ('Trumpy.txt','r', encoding = 'utf-8')
+    f = open ('Trump.txt','r', encoding = 'utf-8')
     text = f.read()
     text = text.lower()
     text = text.replace(",","")
