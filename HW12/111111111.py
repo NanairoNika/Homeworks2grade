@@ -12,11 +12,13 @@ def textcleaner(cleanedtxt):
             cleanedtxt.remove(word)
     f.close()
     return cleanedtxt
-text = []
-findfind = []
-text = textcleaner(text)
-for word in text:
-    iigood = re.search('на((й(т|д)(и|у|ё)(т?|шь|м)?е?)|(хо(жу|д(и|я)(м|шь|те|т)?))|(шё?л(и|а)?))', word)
-    if iigood:
-        findfind.append(word)
-print(findfind)
+def main()
+    text = []
+    findfind = []
+    text = textcleaner(text)
+    for word in text:
+        iigood = re.search('на((й(т|д)(и|у|ё)(т?|шь|м)?е?)|(хо(жу|д(и|я)(м|шь|те|т)?))|(шё?л(и|а)?))', word)
+        if iigood:
+            findfind.append(word)
+    print(findfind)
+main()
