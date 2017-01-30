@@ -12,7 +12,7 @@ def textcleaner(cleanedtxt):
             cleanedtxt.remove(word)
     f.close()
     return cleanedtxt
-def main()
+def main():
     text = []
     findfind = []
     text = textcleaner(text)
