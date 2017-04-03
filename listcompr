@@ -1,0 +1,30 @@
+def textcleaner(cleanedtxt):
+    f = open ('Strel.txt','r', encoding = 'utf-8')
+    text = ()
+    text = f.read()
+    text = text.lower()
+    text = text.split()
+    for word in text:
+        word = word.strip('!.,?’:"()•]—[«»')
+        if word:
+            cleanedtxt.append(word)        
+    f.close()
+    return cleanedtxt
+
+
+def dicti(cleanedtext, freq):
+    values = [x for x in range (len(cleanedtext))]
+    freq = dict(zip(text, values))
+    return freq
+
+def main():
+    f = open ('smth.tsv', 'w', encoding = 'utf-8')
+    cleanedtxt = []       
+    cleanedtxt = textcleaner(cleanedtxt)
+    freq = {}
+    freq = dicti(cleanedtxt, freq)
+    for pos in sorted(freq):
+        f.write(pos + ' ' + str(freq[pos]) + '\n')
+    f.close
+    
+main()
