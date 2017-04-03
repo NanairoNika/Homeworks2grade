@@ -1,0 +1,33 @@
+def textcleaner(cleanedtxt):
+    f = open ('Strel.txt','r', encoding = 'utf-8')
+    text = f.read()
+    text = text.lower()
+    text = text.split()
+    for word in text:
+        word = word.strip('!.,?’:"()•]—[«»')
+        if word:
+            cleanedtxt.append(word)        
+    f.close()
+    return cleanedtxt
+
+
+def dicti(text, freq):
+    for word in text:
+        if word not in freq:
+            freq[word] = 1
+        else:
+            freq[word] +=1
+
+            
+def main():
+    f = open ('streltsy.tsv', 'w', encoding = 'utf-8')
+    cleanedtxt = []       
+    cleanedtxt = textcleaner(cleanedtxt)
+    freq = {}
+    dicti(cleanedtxt, freq)
+    for word in sorted(freq):
+        f.write(word + ' ' + str(freq[word]) + '\n')
+    f.close
+    
+
+main()
